@@ -93,15 +93,15 @@ animation-iteration-count: infinite;
     color: green;
     cursor: pointer;
 }
-#co{
+#em{
     position: relative;
-    left: 250px;
+    left: 90px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: large;
 }
 #dp{
     position: relative;
-    left: 20px;
+    left: 170px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: large;
     

@@ -74,5 +74,7 @@ export class EmployeeService {
     return this.http.request(req);
   }
 
-
+  findembyid(id: number): Observable<Employeelist> {
+    return this.http.get<Employeelist>(`${this.baseurlemp}/findbyid/${id}`);
+  }
 }

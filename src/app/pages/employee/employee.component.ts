@@ -24,9 +24,10 @@ export class EmployeeComponent {
   labelValu!:LabelValu[];
   dpts!:Departementdto[];
   empll!:Employeelist[]
+ 
   @ViewChild('closeModalBtn') closeModalBtn!: ElementRef;
   @ViewChild('editModalBtn') editModalBtn!: ElementRef;
-  
+
   constructor(private servemp:EmployeeService ,private servdpt:DepartementService) { }
   ngOnInit(): void {
     this.addemp.addrdto=new Adresse();
@@ -152,6 +153,6 @@ export class EmployeeComponent {
   }
   changeSource(event: any) {
     event.target.src = "assets/add.png";
-  }
-
+ 
+}
 }

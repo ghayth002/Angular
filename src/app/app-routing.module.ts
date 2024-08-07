@@ -5,7 +5,7 @@ import { CompetencesdtoComponent } from './pages/competencesdto/competencesdto.c
 import { EmployeeComponent } from './pages/employee/employee.component';
 
 const routes: Routes = [{path:"" , component:GestioncomponentComponent },
-  {path:"comp", component:CompetencesdtoComponent},
+  {path:"compp", component:CompetencesdtoComponent},
   {path:"emp", component:EmployeeComponent}
 ];
 @NgModule({
