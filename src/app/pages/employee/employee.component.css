@@ -106,3 +106,110 @@ animation-iteration-count: infinite;
     font-size: large;
     
 }
+.modal-content{
+background-image:linear-gradient(to top ,rgb(9, 72, 24),transparent) ;
+}
+
+
+
+/* CSS */
+.button-74 {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-74:hover {
+  background-color: #fff;
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+.form-control {
+    outline: none;
+   max-width: 400px;
+    padding: 8px;
+    background-color: #d4cbcb;
+    border-radius: 12px;
+    border: 4px solid #000000;
+   
+    font-weight: bold;
+    font-style: italic;
+    margin: auto;
+  }
+  
+  .form-control:hover {
+    background-color: #6ad5f0;
+    outline: none;
+    border: 4px solid #000000;
+  }
+  .form{
+    position: relative;
+    display: flex;      
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+  }
+  /* From Uiverse.io by tiagoadag1203 */ 
+.input {
+    max-width: 190px;
+    background-color: #1a1a1a;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+    position: relative;
+    left: 600px;
+  }
+  
+  .input:focus {
+    animation: rotateShadow 2s infinite linear;
+  }
+  
+  @keyframes rotateShadow {
+    0% {
+      box-shadow: -2px -2px 8px 1px #aa00ff, 2px 2px 8px 1px #3700ff;
+    }
+    25% {
+      box-shadow: -2px 2px 8px 1px #aa00ff, 2px -2px 8px 1px #3700ff;
+    }
+    50% {
+      box-shadow: 2px 2px 8px 1px #aa00ff, -2px -2px 8px 1px #3700ff;
+    }
+    75% {
+      box-shadow: 2px -2px 8px 1px #aa00ff, -2px 2px 8px 1px #3700ff;
+    }
+    100% {
+      box-shadow: -2px -2px 8px 1px #aa00ff, 2px 2px 8px 1px #3700ff;
+    }
+  }
+  #searchbt{
+    position: relative;
+    left: 620px;
+    size: 200px;
+  }
+

@@ -14,7 +14,7 @@ import { Employeelist } from '../../modeles/employeelist';
   styleUrl: './employee.component.css'
 })
 export class EmployeeComponent {
-  imgUrl:string | ArrayBuffer = 'assets/messi.jpg'
+  imgUrl:string | ArrayBuffer = 'assets/add.png'
   //| ArrayBuffer = 'assets/img/avatar.png'
   file!: File;
 
@@ -78,22 +78,39 @@ export class EmployeeComponent {
     this.servemp. delemp(id).subscribe({
       next: (data) => {
        
-        this.getemplist();
+        this.getempliste();
+        this.getvalcolist();
       },
       error: console.log,
     });
   }
   updateem() {
+    console.log(this.updateemp)
     this.servemp.updatemp(this.updateemp).subscribe({
       next: (data) => {
-        this.editModalBtn.nativeElement.click(); // Close edit modal
-        this.getemplist(); // Refresh the department list after update
+        this.editModalBtn.nativeElement.click(); 
+        this.getempliste(); 
+        this.servemp.uploadartImage(data.id, this.file).subscribe(
+          val =>  {} , error => { alert('oups')} , () => {
+
+          });
       },
       error: console.error,
     });
   }
-  allocateemp(item:Employee){
-    this.updateemp = item;
+  allocateemp(item:Employeelist){
+    this.updateemp.id = item.id;
+    this.updateemp.age = item.age;
+
+    this.updateemp.addrdto = item.addresse;
+    this.updateemp.fullname = item.fullname;
+    this.updateemp.img = item.img;
+    this.updateemp.dateRecrutement = item.dateRecrutement;
+    this.updateemp.iddept = item.departement.id;
+
+    
+    console.log("this emp = "+JSON.stringify(this.updateemp));
+    console.log("given emp = "+JSON.stringify(item))
   }
   getdptlist() {
     this.servdpt.getList().subscribe({
@@ -134,7 +151,7 @@ export class EmployeeComponent {
     }
   }
   changeSource(event: any) {
-    event.target.src = "assets/messi.jpg";
+    event.target.src = "assets/add.png";
   }
 
 }

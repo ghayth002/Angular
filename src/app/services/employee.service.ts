@@ -37,6 +37,15 @@ export class EmployeeService {
     );  
   
   }
+    
+  updateempp(emp:Employee):Observable<Employee> {
+    console.log("department from service:"+JSON.stringify(emp));
+    return this.http.post<Employee>(`${this.baseurlemp}/updateemp`,emp)
+    .pipe(
+      map((response:any) => response as Employee)
+    );  
+  
+  }
   findbyid(id: number): Observable<Employee> {
     return this.http.get<Employee>(`${this.baseurlemp}/findbyid/${id}`);
   }

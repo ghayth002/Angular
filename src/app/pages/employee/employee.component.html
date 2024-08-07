@@ -17,6 +17,11 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+            
+<input placeholder="type it" class="input" name="text" type="text" />
+<svg id="searchbt" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-binoculars" viewBox="0 0 16 16">
+    <path d="M3 2.5A1.5 1.5 0 0 1 4.5 1h1A1.5 1.5 0 0 1 7 2.5V5h2V2.5A1.5 1.5 0 0 1 10.5 1h1A1.5 1.5 0 0 1 13 2.5v2.382a.5.5 0 0 0 .276.447l.895.447A1.5 1.5 0 0 1 15 7.118V14.5a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 14.5v-3a.5.5 0 0 1 .146-.354l.854-.853V9.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v.793l.854.853A.5.5 0 0 1 7 11.5v3A1.5 1.5 0 0 1 5.5 16h-3A1.5 1.5 0 0 1 1 14.5V7.118a1.5 1.5 0 0 1 .83-1.342l.894-.447A.5.5 0 0 0 3 4.882zM4.5 2a.5.5 0 0 0-.5.5V3h2v-.5a.5.5 0 0 0-.5-.5zM6 4H4v.882a1.5 1.5 0 0 1-.83 1.342l-.894.447A.5.5 0 0 0 2 7.118V13h4v-1.293l-.854-.853A.5.5 0 0 1 5 10.5v-1A1.5 1.5 0 0 1 6.5 8h3A1.5 1.5 0 0 1 11 9.5v1a.5.5 0 0 1-.146.354l-.854.853V13h4V7.118a.5.5 0 0 0-.276-.447l-.895-.447A1.5 1.5 0 0 1 12 4.882V4h-2v1.5a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5zm4-1h2v-.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zm4 11h-4v.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5zm-8 0H2v.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5z"/>
+  </svg>
                 
                 <a id="co" class="nav-item nav-link active"routerLink="comp">Competences<span class="sr-only"></span></a>
 
@@ -78,8 +83,8 @@
                         <td>{{item.addresse.rue}}</td>
                         <td>{{item.addresse.ville}}</td>
                         <td>{{item.addresse.zip}}</td>
-                        <td data-label="Image"><img alt="image" (error)="changeSource($event)" [src]="item.img" class="" width="50px"
-                            class="img-fluid"></td>
+                       <td data-label="Image"><img alt="image" (error)="changeSource($event)" [src]="item.img" class="" width="50px"
+                        class="img-fluid"></td>
                      
                         <td>
                             <!-- Action buttons -->
@@ -87,9 +92,9 @@
                                 <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
                                 <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
                             </svg>
-                           <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16" data-bs-toggle="modal" (click)="allocateemp(item)" data-bs-target="#EditModel" id="edi">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16" data-bs-toggle="modal" (click)="allocateemp(item)" data-bs-target="#EditModel" id="edi">
                                 <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"/>
-                            </svg>-->
+                            </svg>
                         </td>
                     </tr>
                 </tbody>
@@ -113,35 +118,48 @@
                                 <label  for="name" class="form-label">Fullname</label>
                                 <input required [(ngModel)]="addemp.fullname" type="text" class="form-control" name="nom" placeholder="nom" id="name">
                             </div>
+                            <br>
+                            <hr>
                             <div class="mb-3">
                                 <label  for="name" class="form-label">Age</label>
                                 <input required [(ngModel)]="addemp.age" type="text" class="form-control" name="nom" placeholder="nom" id="name">
                             </div>
+                            <br>
+                            <hr>
                             <div class="mb-3">
                                 <label for="responsable" class="form-label">Date_recrutement</label>
                                 <input required [(ngModel)]="addemp.dateRecrutement" type="date" class="form-control" name="responsable" placeholder="responsable" id="responsable">
                             </div>
+                            <br>
+                            <hr>
                             <div class="mb-3">
                                 <label for="responsable" class="form-label">Rue</label>
                                 <input required [(ngModel)]="addemp.addrdto.rue" type="text" class="form-control" name="responsable" placeholder="responsable" id="responsable">
                             </div>
+                            <br>
+                            <hr>
                             <div class="mb-3">
                                 <label for="responsable" class="form-label">Ville</label>
                                 <input required [(ngModel)]="addemp.addrdto.ville" type="text" class="form-control" name="responsable" placeholder="responsable" id="responsable">
                             </div>
+                            <br><hr>
                             <div class="mb-3">
                                 <label for="responsable" class="form-label">Zip</label>
                                 <input required [(ngModel)]="addemp.addrdto.zip" type="text" class="form-control" name="responsable" placeholder="responsable" id="responsable">
                             </div>
+                            <br>
+                            <hr>
                             <div class="form-group row mb-3 justify-content-center">
                                 <button (click)="fileInput.click()" style="background-color: transparent; border: none;">
                                     <img (error)="changeSource($event)" [src]="imgUrl" class="rounded-circle" width="100px" height="100px" />
                                     <input hidden type="file" #fileInput (change)="onFileInput(fileInput.files)" [(ngModel)]="addemp.img" name="img">
                                 </button>
                                               </div>
+                                              <br>
+                                              <hr>
             
                             <div class="form-inner">
-                                <label>Departement *</label>
+                                <label>Departement </label>
                                 <select
                                 type="text"
                                 [(ngModel)]="addemp.iddept"
@@ -151,11 +169,17 @@
                                     <option *ngFor="let item of dpts" [value]="item.id">{{item.nom}}</option>
                                   </select>
                             </div>
+                            <br>
+                            <hr>
                             <div class="form-group">
-                                <p-multiSelect [options]="labelValu" [(ngModel)]="addemp.compts" name="sevicesCom" defaultLabel="services" class="form-control"></p-multiSelect>
+                                <label for="Competences">Competences</label>
+                                <p-multiSelect [options]="labelValu" [(ngModel)]="addemp.compts" name="sevicesCom" defaultLabel="services" class="form"></p-multiSelect>
                               </div>
+                              <br>
+                              <br>
+                              <br>
                             
-                            <button class="btn btn-primary" (click)="addempl()">Ajouter</button>
+                            <button class="button-74" (click)="addempl()">Ajouter</button>
                         </form>
                     </div>
                 </div>
@@ -177,30 +201,77 @@
                             <div class="mb-3">
                                 <input  [(ngModel)]="updateemp.id" hidden type="text">
                                 <label  for="titre" class="form-label">Fullname </label>
-                                <input   [(ngModel)]="updateemp.fullname" type="text" class="form-control" name="nom" placeholder="titre" id=""titre>
+                                <input   [(ngModel)]="updateemp.fullname" type="text" class="form-control" name="nom" placeholder="titre" >
+                                </div>
+                                <br>
+                                <hr>
                                 <div class="mb-3">
+                                   
+                                    
                                   <label for="grade" class="form-label">Age</label>
-                                  <input required [(ngModel)]="updateemp.age" type="text" class="form-control" name="responsable" placeholder="grade" id="grade">
+                                  <input required [(ngModel)]="updateemp.age" type="text" class="form-control" name="age" placeholder="grade" >
                               </div>
+                              <br>
+                              <hr>
                               <div class="mb-3">
                                 <label for="grade" class="form-label">DateRecrutement</label>
-                                <input required [(ngModel)]="updateemp.dateRecrutement" type="text" class="form-control" name="responsable" placeholder="grade" id="grade">
+                                <input  required [(ngModel)]="updateemp.dateRecrutement" type="text" class="form-control" name="date"  placeholder="grade">
                             </div>
+                            <br>
+                            <hr>
                             <div class="mb-3">
                                 <label for="grade" class="form-label">Rue</label>
-                                <input required [(ngModel)]="updateemp.addrdto.rue" type="text" class="form-control" name="responsable" placeholder="grade" id="grade">
+                                <input required [(ngModel)]="updateemp.addrdto.rue" type="text" class="form-control" name="rue" placeholder="grade" >
                             </div>
+                            <br>
+                            <hr>
                             <div class="mb-3">
                                 <label for="grade" class="form-label">Ville</label>
-                                <input required [(ngModel)]="updateemp.addrdto.ville" type="text" class="form-control" name="responsable" placeholder="grade" id="grade">
+                                <input required [(ngModel)]="updateemp.addrdto.ville" type="text" class="form-control" name="ville" placeholder="grade" >
                             </div>
+                            <br>
+                            <hr>
                             <div class="mb-3">
                                 <label for="grade" class="form-label">Zip</label>
-                                <input required [(ngModel)]="updateemp.addrdto.zip" type="text" class="form-control" name="responsable" placeholder="grade" id="grade">
+                                <input required [(ngModel)]="updateemp.addrdto.zip" type="text" class="form-control" name="zip" placeholder="grade" >
                             </div>
+                            <br>
+                            <hr>
+                            <div class="form-group row mb-3 justify-content-center">
+                                <button (click)="fileInput.click()" style="background-color: transparent; border: none;">
+                                    <i class="bi bi-image-fill"></i>
+                                    <img (error)="changeSource($event)" [src]="imgUrl" class="rounded-circle" width="100px" height="100px" />
+                                    <input hidden type="file" #fileInput (change)="onFileInput(fileInput.files)" [(ngModel)]="updateemp.img" name="img">
+                                </button>
+                                              </div>
+                                              <br>
+                                              <hr>
+            
+                            <div class="form-inner">
+                                
+                            <label>Departement</label>
+                                <select
+                                type="text"
+                                [(ngModel)]="updateemp.iddept"
+                                name="iddept"
+                                class="form-control"
+                                 id="idcategorie" style="color:black;">
+                                    <option *ngFor="let item of dpts" [value]="item.id">{{item.nom}}</option>
+                                  </select>
+                                  
+                            </div>
+                            <br>
+                            <hr>
+                            <div class="form-group">
+                                <label>Competences</label>
+                                <p-multiSelect [options]="labelValu" [(ngModel)]="updateemp.compts" name="compts" defaultLabel="services" class="form"></p-multiSelect>
+                              </div>
                             
-                              <button class="btn btn-primary" (click)="updateem()">Update</button>
-                            </div>
+                            <br>
+                            <br>
+                            <br>
+                              <button class="button-74" (click)="updateem()">Update</button>
+                            
 
                             </form>
                     

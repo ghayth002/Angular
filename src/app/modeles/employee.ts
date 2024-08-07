@@ -12,7 +12,7 @@ export class Employee {
     dateRecrutement!:Date;
     iddept!:number;
     addrdto:Adresse = new Adresse;
-    compts!:LabelValu[]
+    compts!:Competencesdto[]
 
 
 }
