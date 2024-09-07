@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide Navbar</title>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form>
+					<label for="chk" aria-hidden="true">Sign up</label>
+                    <input type="text" name="fullname" placeholder="Full name" [(ngModel)]="registerRequest.fullname" required="">
+
+					<input type="email" name="email" placeholder="Email"[(ngModel)]="registerRequest.email" required="">
+					<input type="password" name="pswd" placeholder="Password" [(ngModel)]="registerRequest.password" required="">
+                    <input type="text" name="direction" placeholder="Direction" [(ngModel)]="registerRequest.direction" required="">
+					<button (click)="register()">Sign up</button>
+				</form>
+			</div>
+
+			<div class="login">
+				<form>
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="email" name="email" [(ngModel)]="authRequest.email" placeholder="Email" required="">
+					<input type="password" name="pswd" placeholder="Password"[(ngModel)]="authRequest.password"required="">
+					<button (click)="Login()">Login</button>
+				</form>
+			</div>
+	</div>
+</body>
+</html>
