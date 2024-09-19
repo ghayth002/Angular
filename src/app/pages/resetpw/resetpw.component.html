@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+</head>
+<body>
+    <form>
+      
+        <input type="email" name="email" [(ngModel)]="stepthree.email" placeholder="Email" required="">
+        <input type="password" name="pswd" placeholder="Password"[(ngModel)]="stepthree.newPassword"required="">
+        <input type="password" name="newpswd" placeholder="confpass"[(ngModel)]="stepthree.confirmationPassword"required="">
+        <button (click)="changepass()">Login</button>
+    </form> 
+</body>
+</html>

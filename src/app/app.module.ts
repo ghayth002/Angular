@@ -16,6 +16,9 @@ import { EmployeeComponent } from './pages/employee/employee.component';
 import {MultiSelectModule} from 'primeng/multiselect';
 import { LoginSignupComponent } from './pages/login-signup/login-signup.component';
 import { AuthIntercepterService } from './services/auth-intercepter-service.service';
+import { ForgetpassComponent } from './pages/forgetpass/forgetpass.component';
+import { VerifyotpComponent } from './pages/verifyotp/verifyotp.component';
+import { ResetpwComponent } from './pages/resetpw/resetpw.component';
 
 
 @NgModule({
@@ -25,7 +28,10 @@ import { AuthIntercepterService } from './services/auth-intercepter-service.serv
     ModalComponent,
     CompetencesdtoComponent,
     EmployeeComponent,
-    LoginSignupComponent
+    LoginSignupComponent,
+    ForgetpassComponent,
+    VerifyotpComponent,
+    ResetpwComponent
     
   ],
   imports: [
